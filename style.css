@@ -1,0 +1,132 @@
+body {
+    display: flex; 
+    flex-direction: row; 
+    height: 100vh;
+    padding: 0; 
+    text-align: left;
+}
+.logo {
+    color: #4C4471;
+}
+.sidebar {
+    width: 260px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    background-color: #242038;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 40px;
+}
+
+.dark {
+     background-color: #030027; 
+     color: #55D6C3;
+     background-image: radial-gradient(circle, #050044 1px, transparent 1px);
+     background-size: 30px 30px;
+}
+
+.light { 
+    background-color: #f4f4f4; 
+    color: #333; 
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    width: auto; 
+    margin: 5px 15px;
+    background: transparent;
+    border-left: 3px solid transparent; 
+}
+
+
+.nav-item:hover {
+    border-left: 3px solid var(--lang-color);
+    background-color: rgba(76, 68, 113, 0.1);
+}
+.dark .sidebar {
+    background-color: #55D6C3;
+}
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold; 
+    transition: 0.3s;
+    color: #4C4471;
+    width: 200px;
+}
+.dark button {
+    background-color: #55D6C3; 
+    color: #358378;            
+    border-color: #55D6C3;
+    box-shadow: 0 0 15px #55D6C3; 
+}
+.dark button:hover {
+    background-color: #030027; 
+    color: #55D6C3;            
+    border-color: #93E5AB;
+    box-shadow: 0 0 20px #93E5AB; 
+}
+.light button:hover {
+    background-color: #4C4471; 
+    color: #242038;            
+    box-shadow: 0 0 10px #242038; 
+}
+.dark #lightBtn {
+    background-color: #358378;
+    color: rgba(85, 214, 195, 0.5); 
+    border: 1px solid #55D6C3;
+}
+.dark #darkBtn {
+    background-color: #030027;
+    color: #55D6C3; 
+    border: 1px solid rgba(85, 214, 195, 0.3); 
+    cursor: default;
+    pointer-events: none;
+    box-shadow: none;
+    opacity: 0.5;
+}
+
+.light #lightBtn {
+    background-color: #4C4471;
+    color: #242038;
+    border: 1px solid rgba(51, 51, 51, 0.2);
+    cursor: default;
+    pointer-events: none;
+    box-shadow: none;
+    opacity: 0.5;
+}
+.light #darkBtn {
+    background-color: #4C4471;
+    color: #242038; 
+    border: 1px solid #4C4471;
+}
+
+.dark .nav-item {
+    background-color: transparent;
+    color: #358378;
+    border-radius: 4px;
+    margin: 4px 10px;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.dark .nav-item:hover {
+    background-color: rgba(53, 131, 120, 0.15);
+    color: #265f57;
+}
+
+.dark .nav-item.active {
+    background-color: #358378;
+    color: #55D6C3; 
+}
