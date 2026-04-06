@@ -87,3 +87,9 @@ body {
     padding: 8px;
     font-size: 12px;
 }
+/* Button Customization (python sql etc) */
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
